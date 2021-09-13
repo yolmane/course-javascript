@@ -2,7 +2,7 @@ import { delayPromise, loadAndSortTowns } from './functions';
 
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 
-describe('ДЗ 5.2 - Асинхронность и работа с сетью', () => {
+describe('ДЗ 6.1 - Асинхронность и работа с сетью', () => {
   describe('delayPromise', () => {
     it('должна возвращать Promise', () => {
       const result = delayPromise(1);
