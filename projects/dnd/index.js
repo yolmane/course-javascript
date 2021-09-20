@@ -16,10 +16,13 @@
    homeworkContainer.appendChild(newDiv);
  */
 import './dnd.html';
+
 const homeworkContainer = document.querySelector('#homework-container');
+
 function random(from, to) {
   return parseInt(from + Math.random() * to - from);
 }
+
 let currentDrag;
 let startX = 0;
 let startY = 0;
