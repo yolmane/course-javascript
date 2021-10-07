@@ -1,0 +1,22 @@
+{
+  "proxy": {
+    "/vp-1/list": {
+      "target": "http://localhost:8080/",
+      "pathRewrite": {
+        "^/vp-1": ""
+      }
+    },
+    "/vp-1/add": {
+      "target": "http://localhost:8080/",
+      "pathRewrite": {
+        "^/vp-1": ""
+      }
+    },
+    "/vp-1/coords": {
+      "target": "http://localhost:8080/",
+      "pathRewrite": {
+        "^/vp-1": ""
+      }
+    }
+  }
+}

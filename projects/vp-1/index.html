@@ -1,0 +1,80 @@
+<style>
+    html, body, #map {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form {
+        width: 100%;
+        min-width: 300px;
+        
+    }
+
+    .form .field {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form .field input,
+    .form .field textarea {
+        font-weight: bold;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form .field textarea {
+        resize: none;
+    }
+
+    .form .form-error {
+        color: red;
+    }
+
+    .form .review-list {
+        max-height: 500px;
+        overflow: scroll;
+    }
+
+.mt__20{
+    margin-top: 20px;
+    
+}
+.mt__10{
+    margin-top: 10px;
+}
+.inpt__submit{
+    width: 42%;
+    background-color: #FF8663;
+    color:white;
+    border: none;
+    height: 22px;
+    cursor: pointer;
+}
+.feedback{
+    padding-bottom: 26px;
+}
+
+</style>
+
+<div id="map"></div>
+
+<script type="template" id="addFormTemplate">
+    <div class="review-list"></div>
+    <div class="form" data-role="review-form">
+        <h3>Отзыв:</h3>
+        <div class="field mt__20">
+            <input data-role="review-name" type="text" placeholder="Укажите ваше имя">
+        </div>
+        <div class="field mt__10">
+            <input data-role="review-place" type="text" placeholder="Укажите место">
+        </div>
+        <div class="field ">
+            <textarea data-role="review-text" placeholder="Оставьте отзыв" rows="5"></textarea>
+        </div>
+
+        <button class="inpt__submit" data-role="review-add">Добавить</button>
+        <span class="form-error"></span>
+    </div>
+</script>

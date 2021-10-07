@@ -1,0 +1,14 @@
+{
+  "proxy": {
+    "/vp-2/ws": {
+      "target": "ws://localhost:8282",
+      "ws": true
+    },
+    "/vp-2/upload-photo": {
+      "target": "http://localhost:8282"
+    },
+    "/vp-2/photos": {
+      "target": "http://localhost:8282"
+    }
+  }
+}
